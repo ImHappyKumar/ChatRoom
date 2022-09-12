@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Including Server JS -->
+    <script defer src="https://chatroom-vykps.run-ap-south1.goorm.io/socket.io/socket.io.js"></script>
+    <!-- Including Client JS -->
+    <script defer src="JS/client.js"></script>
+    <title>ChatRoom</title>
+</head>
+
+<body>
+    <div class="chatSection">
+        <div class="headContainer">
+            <img src="CSS/img/logo.png" alt="headLogo" class="logo">
+        </div>
+
+        <div class="messageContainer">
+            <!--<div class="messageBox right">Sender</div>-->
+            <!--<div class="notificationBox center">User Joined/Left</div>-->
+            <!--<div class="messageBox left">Receiver</div>-->
+        </div>
+
+        <div class="sendContainer">
+            <form action="#" id="sendBox">
+                <textarea name="messageInput" autocomplete="off" type="text" id="messageInput" cols="30" rows="1"
+                    placeholder="Write a message..."></textarea>
+                <button class="btn" type="submit"><img src="CSS/img/send.png" alt="Send" class="sendBtn"></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="memberSection">
+        <div class="memberHead">
+            <h2>Members in ChatRoom<br>(Beta Version)</h2>
+        </div>
+        <div>
+            <ul class="memberList">
+                <!-- <li>Member 1</li>
+                <li>Member 2</li> -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

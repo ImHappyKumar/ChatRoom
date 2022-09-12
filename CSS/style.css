@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CHAT SECTION */
+.chatSection{
+    height: 100vh;
+    max-width: 80vw;
+}
+
+.headContainer{
+    box-shadow: 0vh 0.4vh #e6e6e6, 0.4vh 0vh #e6e6e6;
+    height: 7vh;
+}
+
+.logo{
+    height: 6.5vh;
+    margin: 5px 2px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.messageContainer{
+    height: 84vh;
+    overflow-y: auto;
+    box-shadow: 0.4vh 0vh #e6e6e6;
+    padding-top: 15px;
+}
+
+.messageBox{
+    border-radius: 20px;
+    max-width: 40%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    overflow: auto;
+}
+
+.notificationBox{
+    max-width: 40%;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+.right{
+    float: right;
+    clear: both;
+    background-color: #0084ff;
+    color: white;
+    margin-right: 10px;
+}
+
+.left{
+    float: left;
+    clear: both;
+    background-color: #e4e6eb;
+    color: black;
+    margin-left: 10px;
+}
+
+.center{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    clear: both;
+    color: #65676b;
+}
+
+.sendContainer{
+    box-shadow: 0vh -0.4vh #e6e6e6, 0.4vh 0vh #e6e6e6;
+    padding: 10px 20px;
+    height: 7vh;
+    width: 80vw;
+}
+
+#messageInput{
+    width: 95%;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    background-color: #f0f2f5;
+    resize: none;
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    margin-left: 15px;
+}
+
+.btn img{
+    height: 5vh;
+    margin-bottom: 5px;
+}
+
+/* MEMBER SECTION */
+.memberSection{
+    height: 100vh;
+    width: 20vw;
+    max-width: 20vw;
+}
+
+.memberHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0vh 0.4vh #e6e6e6;
+    height: 7vh;
+    font-size: 1.5vh;
+}
+
+.memberList{
+    height: 93vh;
+    max-width: 20vw;
+    list-style-position: inside;
+    padding: 10px 20px;
+    overflow-y: auto;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1524px){
+    #messageInput{
+        width: 90%;
+    }
+}
+
+@media (max-width: 790px){
+    #messageInput{
+        width: 85%;
+    }
+}
+
+@media (max-width: 660px){
+    .memberHead{
+        font-size: 1.2vh;
+    }
+}
+
+@media (max-width: 550px){
+    .memberSection{
+        display: none;
+    }
+
+    .chatSection{
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    .sendContainer{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 450px){
+    #messageInput{
+        width: 80%;
+    }
+}
