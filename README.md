@@ -1,5 +1,5 @@
 # ChatRoom
-This is a chatting site made with the help of "socket.io" used in Node.js
+This website provides you a chat room where multiple members who joined the room can chat with each other. It is made with the help of "socket.io" used in Node.js.
 
 Desktop Preview:
 
